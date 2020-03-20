@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body
+{
+    background-color:#DAF7A6  ;
+
+}
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  background-color:#DAF7A6  ;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 40px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: 30%;
+  background-color: #f44336;
+   margin-right: 100px;
+}
+
+.container {
+  padding: 20px;
+  width: 50%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2 style="color: #F1831C ;">Login Form </h2>
+
+<form action="/action_page.php" method="post">
+ 
+
+    <label for="uname"><b>Username</b></label><br>
+    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br><br>
+   <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -->
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="submit">Login</button>
+      <button type="button" class="cancelbtn">Cancel</button>
+   </div>
+   <br><br>
+   <div class="container" style="background-color:#C5ACD5 ">
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+ 
+    
+</form>
+
+</body>
+</html>
